@@ -10,6 +10,13 @@ namespace modul4_1302204008
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Soal 1");
+            Console.WriteLine("NIM = 1302204008");
+            Console.Write("13 + 02 + 20 = ");
+            Penjumlahan<int>.JumlahTigaAngka(13, 02, 20);
+            Console.WriteLine();
+
+            Console.WriteLine("Soal 2");
             SimpleDataBase<int> simpleData = new SimpleDataBase<int>();
             simpleData.AddNewData(13);
             simpleData.AddNewData(02);
@@ -38,9 +45,6 @@ namespace modul4_1302204008
             {
                 Console.WriteLine("Data " + (i + 1) + " berisi : " + storedData[i] + ",yang disimpan pada waktu UTC: " + inputDates[i]);
             }
-            Console.WriteLine("NIM = 1302204008");
-            Console.Write("13 + 02 + 20 = ");
-            Penjumlahan<int>.JumlahTigaAngka(13, 02, 20);
         }
     }
     public class Penjumlahan<T> {
