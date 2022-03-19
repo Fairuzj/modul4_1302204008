@@ -10,6 +10,24 @@ namespace modul4_1302204008
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("NIM = 1302204008");
+            Console.Write("13 + 02 + 20 = ");
+            Penjumlahan<int>.JumlahTigaAngka(13, 02, 20);
+        }
+    }
+    public class Penjumlahan<T> {
+        private T angka;
+
+        public Penjumlahan(T angka)
+        {
+            this.angka = angka;
+        }
+        public static void JumlahTigaAngka(T x, T y, T z)
+        {
+            dynamic X = x;
+            dynamic Y = y;
+            dynamic Z = z;
+            Console.WriteLine(X + Y + Z);
         }
     }
 }
